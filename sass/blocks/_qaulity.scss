@@ -1,0 +1,58 @@
+.quality {
+  margin-bottom: 95px;
+}
+
+.quality-container {
+  @include container;
+  text-align: center;
+}
+
+.quality-advantages {
+  margin-bottom: 55px;
+  padding: 35px 50px 50px 50px;
+  border-radius: 3px;
+  background-image: url(/images/quality-block/qaulity_bg.svg);
+  background-size: cover;
+
+  &__banner {
+    margin-bottom: 55px;
+  }
+}
+
+.quality-items {
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    width: 19%;
+  }
+
+  &__logo {
+    margin-bottom: 35px;
+    height: 95px;
+  }
+
+  &__description {
+    color: #ffffff;
+  }
+}
+
+.quality-button {
+  padding: 18px 55px 18px 35px;
+  border-radius: 3px;
+  border: none;
+  background-color: $blue-color;
+  @include font-size-16px-weight-700;
+  color: #ffffff;
+
+  &__img {
+    padding-right: 22px;
+    vertical-align: middle;
+  }
+}
+
+.quality-button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.5s;
+}
