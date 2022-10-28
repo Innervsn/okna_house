@@ -11,32 +11,56 @@
     <header class="header">
       <div class="header-container">
         <div class="header__logo">
-          <img src="./images/header_logo.png" alt="" />
+          <img src="./images/header-block/header_logo.png" alt="" />
         </div>
         <nav class="header-navigation">
           <ul class="header-navigation__list">
             <li class="header-navigation__item">
-              <a class="header-navigation__link" href="">Услуги</a>
+              <a
+                class="header-navigation__link header-navigation__link--hover"
+                href=""
+                >Услуги</a
+              >
             </li>
 
             <li class="header-navigation__item">
-              <a class="header-navigation__link" href="">Продукция</a>
+              <a
+                class="header-navigation__link header-navigation__link--hover"
+                href=""
+                >Продукция</a
+              >
             </li>
 
             <li class="header-navigation__item">
-              <a class="header-navigation__link" href="">О компании</a>
+              <a
+                class="header-navigation__link header-navigation__link--hover"
+                href=""
+                >О компании</a
+              >
             </li>
 
             <li class="header-navigation__item">
-              <a class="header-navigation__link" href="">Портфолио</a>
+              <a
+                class="header-navigation__link header-navigation__link--hover"
+                href=""
+                >Портфолио</a
+              >
             </li>
 
             <li class="header-navigation__item">
-              <a class="header-navigation__link" href="">Вопрос-ответ</a>
+              <a
+                class="header-navigation__link header-navigation__link--hover"
+                href=""
+                >Вопрос-ответ</a
+              >
             </li>
 
             <li class="header-navigation__item">
-              <a class="header-navigation__link" href="">Контакты</a>
+              <a
+                class="header-navigation__link header-navigation__link--hover"
+                href=""
+                >Контакты</a
+              >
             </li>
           </ul>
         </nav>
@@ -45,14 +69,14 @@
           <button class="header-buttons__btn header-buttons__btn--orange">
             <img
               class="header-buttons__img"
-              src="./images/header_btn_img1.png"
+              src="./images/header-block/header_btn_img1.png"
               alt="" />Заявка на замер
           </button>
 
           <button class="header-buttons__btn header-buttons__btn--blue">
             <img
               class="header-buttons__img"
-              src="./images/header_btn_img2.png"
+              src="./images/header-block/header_btn_img2.png"
               alt="" />Заказать расчет
           </button>
         </div>
@@ -60,6 +84,57 @@
     </header>
 
     <main>
+      <section class="preview">
+        <div class="preview-container">
+          <div class="preview-about">
+            <div class="preview-about__title">
+              <spnan class="preview-about__name">Окна Хаус -</spnan>
+              <p class="preview-about__description">
+                Профессиональный подход к остеклению
+              </p>
+            </div>
+
+            <div class="preview-about__items">
+              <div class="preview-about__item">
+                <img class="preview-about__item-icon" src="./images/preview-block/preview-about_logo_1.svg" alt="" />
+                <p class="preview-about__item-description">
+                  Современные окнаи балконные конструкции по доступным ценам
+                </p>
+              </div>
+
+              <div class="preview-about__item">
+                <img class="preview-about__item-icon" src="./images/preview-block/preview-about_logo_2.svg" alt="" />
+                <p class="preview-about__item-description">
+                  Квалифицированный подход к решению задач любой сложности
+                </p>
+              </div>
+
+              <div class="preview-about__item">
+                <img class="preview-about__item-icon" src="./images/preview-block/preview-about_logo_3.svg" alt="" />
+                <p class="preview-about__item-description">
+                  Гарантия высочайшего качества нашей продукции
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="preview-measure">
+            <form class="preview-form" action="">
+              <h2 class="preview-form__title">Вызвать замершика на дом</h2>
+              <input class="preview-form__input" type="text" placeholder="Представьтесь, пожалуйста"/>
+              <input class="preview-form__input" type="tel" placeholder="Номер телефона"/>
+              <input class="preview-form__input" type="email" placeholder="E-mail"/>
+              <label class="preview-form__label" for="">
+                <input class="preview-form__checkbox" type="checkbox" />Согласен на обработку персональных
+                данных в соответствии с политикой конфиденциальности
+              </label>
+              <button class="preview-form__btn">Отправить заявку</button>
+              <img class="preview-form__ruler" src="./images/preview-block/preview-form_ruler.png" alt="">
+            </form>
+          </div>
+        </div>
+      </section>
+
       <section class="services">
         <div class="services-container">
           <h2 class="services__title">Наши услуги</h2>
@@ -68,7 +143,7 @@
               <div class="services-list__element">
                 <img
                   class="services-list__window-icon"
-                  src="./images/servise_logo_1.svg"
+                  src="./images/services-block/service_logo_1.svg"
                   alt="" />
 
                 <h3 class="services-list__title">Установка пластиковых окон</h3>
@@ -84,7 +159,7 @@
               <div class="services-list__element">
                 <img
                   class="services-list__balckony-icon"
-                  src="./images/servise_logo_2.svg"
+                  src="./images/services-block/service_logo_2.svg"
                   alt="" />
 
                 <h3 class="services-list__title">
@@ -103,7 +178,7 @@
               <div class="services-list__element">
                 <img
                   class="services-list__houses-icon"
-                  src="./images/servise_logo_3.svg"
+                  src="./images/services-block/service_logo_3.svg"
                   alt="" />
 
                 <h3 class="services-list__title">Остекление коттеджей и дач</h3>
@@ -119,7 +194,7 @@
               <div class="services-list__element">
                 <img
                   class="services-list__commercy-icon"
-                  src="./images/servise_logo_4.svg"
+                  src="./images/services-block/service_logo_4.svg"
                   alt="" />
 
                 <h3 class="services-list__title">
