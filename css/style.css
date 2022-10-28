@@ -19,26 +19,32 @@
 
 .header-navigation__list {
   display: flex;
-}
-.header-navigation__item {
-  list-style-type: none;
+  gap: 30px;
+  padding: 0;
+  list-style: none;
 }
 .header-navigation__link {
-  padding-right: 30px;
   text-decoration: none;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  color: #000000;
+  color: #2f2f51;
+}
+.header-navigation__link--hover:hover {
+  color: #ef7f04;
 }
 
-.header-buttons__btn--orange {
-  padding: 11px 19px 11px 14px;
+.header-buttons {
+  display: flex;
+  gap: 14px;
+}
+.header-buttons__btn {
+  width: 169px;
+  height: 40px;
   border: none;
   border-radius: 3px;
-  background-color: #ef7f04;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -46,18 +52,11 @@
   line-height: 15px;
   color: #ffffff;
 }
+.header-buttons__btn--orange {
+  background-color: #ef7f04;
+}
 .header-buttons__btn--blue {
-  padding: 11px 19px 11px 14px;
-  margin-left: 14px;
-  border: none;
-  border-radius: 3px;
   background-color: #3b3a63;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 13px;
-  line-height: 15px;
-  color: #ffffff;
 }
 .header-buttons__btn:hover {
   cursor: pointer;
@@ -86,25 +85,26 @@
   gap: 10px;
 }
 .services-list__card {
-  width: 32.6%;
+  box-sizing: border-box;
+  width: 49.5%;
   border-radius: 3px;
   padding: 46px 150px 40px 53px;
   filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
 }
 .services-list__card--window {
-  background-image: linear-gradient(90.45deg, #ffffff 47.56%, rgba(255, 255, 255, 0) 98.81%), url(/images/sevrice_img_1.png);
+  background-image: linear-gradient(90.45deg, #ffffff 47.56%, rgba(255, 255, 255, 0) 98.81%), url(/images/services-block/sevrice_card-img_1.png);
   background-size: cover;
 }
 .services-list__card--balckony {
-  background-image: linear-gradient(90.45deg, #ffffff 47.56%, rgba(255, 255, 255, 0) 98.81%), url(/images/sevrice_img_2.png);
+  background-image: linear-gradient(90.45deg, #ffffff 47.56%, rgba(255, 255, 255, 0) 98.81%), url(/images/services-block/sevrice_card-img_2.png);
   background-size: cover;
 }
 .services-list__card--houses {
-  background-image: linear-gradient(90.45deg, #ffffff 47.56%, rgba(255, 255, 255, 0) 98.81%), url(/images/sevrice_img_3.png);
+  background-image: linear-gradient(90.45deg, #ffffff 47.56%, rgba(255, 255, 255, 0) 98.81%), url(/images/services-block/sevrice_card-img_3.png);
   background-size: cover;
 }
 .services-list__card--commercy {
-  background-image: linear-gradient(90.45deg, #ffffff 47.56%, rgba(255, 255, 255, 0) 98.81%), url(/images/sevrice_img_4.png);
+  background-image: linear-gradient(90.45deg, #ffffff 47.56%, rgba(255, 255, 255, 0) 98.81%), url(/images/services-block/sevrice_card-img_4.png);
   background-size: cover;
 }
 .services-list__element {
@@ -113,5 +113,147 @@
   align-items: center;
 }
 .services-list__title {
-  margin-left: 28px;
+  width: 299px;
+  margin: 0px 0px 0px 28px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #2f2f51;
+}
+.services-list__description {
+  width: 285px;
+  margin: 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #2f2f51;
+}
+
+.preview {
+  margin-bottom: 68px;
+  background-image: url(/images/preview-block/preview_bg.svg);
+  background-size: cover;
+}
+
+.preview-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.preview-about {
+  padding: 133px 0 0 90px;
+}
+.preview-about__title {
+  margin-bottom: 35px;
+}
+.preview-about__items {
+  display: flex;
+}
+.preview-about__item {
+  margin-right: 33px;
+}
+.preview-about__name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ef7f04;
+}
+.preview-about__description {
+  max-width: 445px;
+  margin: 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 36px;
+  line-height: 42px;
+  color: #ffffff;
+}
+.preview-about__item-description {
+  width: 176px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+}
+.preview-about__item-icon {
+  height: 81px;
+}
+
+.preview-measure {
+  padding: 70px 0 60px 0;
+}
+
+.preview-form {
+  width: 406px;
+  position: relative;
+  box-sizing: border-box;
+  padding: 43px 40px 60px;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+.preview-form__title {
+  margin: 0 0 27px 0;
+  text-align: center;
+}
+.preview-form__input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 15px;
+  padding-left: 16px;
+  height: 40px;
+  border-radius: 3px;
+  border-style: none;
+  outline: none;
+  background: #e2e2e2;
+}
+.preview-form__input::-moz-placeholder {
+  color: #424268;
+}
+.preview-form__input:-ms-input-placeholder {
+  color: #424268;
+}
+.preview-form__input::placeholder {
+  color: #424268;
+}
+.preview-form__label {
+  display: flex;
+  margin-bottom: 24px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+.preview-form__checkbox {
+  margin-right: 10px;
+}
+.preview-form__btn {
+  display: block;
+  margin: 0 auto;
+  width: 199px;
+  height: 55px;
+  border: none;
+  border-radius: 3px;
+  background-color: #ef7f04;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+.preview-form__ruler {
+  position: absolute;
+  left: -7px;
+  bottom: -55px;
 }/*# sourceMappingURL=style.css.map */
