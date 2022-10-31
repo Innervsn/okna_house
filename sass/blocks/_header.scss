@@ -24,7 +24,11 @@
 
   &__link {
     text-decoration: none;
-    @include font-size-16px-weight-400;
+    font-family: "Roboto-Regular", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
     color: #2f2f51;
 
     &--hover:hover {
@@ -38,11 +42,14 @@
   gap: 14px;
 
   &__btn {
-    width: 169px;
-    height: 40px;
+    padding: 13px;
     border: none;
     border-radius: 3px;
-    @include font-size-13px-weight-700;
+    font-family: "Roboto-Bold", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
     color: #ffffff;
 
     &--orange {
