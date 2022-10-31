@@ -9,16 +9,24 @@
 .services__title {
   margin: 0px 0px 49px 0px;
   text-align: center;
+  font-family: "Roboto-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #2f2f51;
 }
 
 .services-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  // justify-content: space-between;
   gap: 10px;
 
   &__card {
     box-sizing: border-box;
+    // width: 595px;
+    // margin-bottom: 20px;
     width: 49.5%;
     border-radius: 3px;
     padding: 46px 150px 40px 53px;
@@ -72,16 +80,24 @@
   }
 
   &__title {
-    width: 299px;
+    width: 300px;
     margin: 0px 0px 0px 28px;
-    @include font-size-24px-weight-700;
+    font-family: "Roboto-Bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
     color: #2f2f51;
   }
 
   &__description {
-    width: 285px;
+    width: 300px;
     margin: 0;
-    @include font-size-16px-weight-400;
+    font-family: "Roboto-Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
     color: #2f2f51;
   }
 }

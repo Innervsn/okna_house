@@ -11,10 +11,31 @@
 
 .preview-about {
   // margin-right: 52px;
-  padding: 133px 0 0 90px;
+  padding: 110px 0 0 90px;
+
+  @media screen and (max-width: 1200px) {
+    padding: 110px 0 110px 72px;
+  }
+
+  &__text {
+    display: block;
+    font-family: "Roboto-Bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: $orange-color;
+  }
 
   &__title {
+    width: 450px;
     margin-bottom: 35px;
+    font-family: "Roboto-Thin";
+    font-style: normal;
+    font-weight: 100;
+    font-size: 36px;
+    line-height: 42px;
+    color: #ffffff;
   }
 
   &__items {
@@ -25,21 +46,20 @@
     margin-right: 33px;
   }
 
-  &__name {
-    @include font-size-24px-weight-700;
-    color: $orange-color;
-  }
-
-  &__description {
-    max-width: 445px;
-    margin: 0;
-    @include font-size-36px-weight-100;
-    color: #ffffff;
-  }
+  // &__description {
+  //   max-width: 445px;
+  //   margin: 0;
+  //   @include font-size-36px-weight-100;
+  //   color: #ffffff;
+  // }
 
   &__item-description {
     width: 176px;
-    @include font-size-14px-weight-400;
+    font-family: "Roboto-Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
     color: #ffffff;
   }
 
@@ -50,6 +70,11 @@
 
 .preview-measure {
   padding: 70px 0 60px 0;
+  box-sizing: border-box;
+
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
 }
 
 .preview-form {
@@ -63,6 +88,11 @@
   &__title {
     margin: 0 0 27px 0;
     text-align: center;
+    font-family: "Roboto-Bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
   }
 
   &__input {
@@ -79,13 +109,22 @@
   }
 
   &__input::placeholder {
+    font-family: "Roboto-Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
     color: #424268;
   }
 
   &__label {
     display: flex;
     margin-bottom: 24px;
-    @include font-size-12px-weight-400;
+    font-family: "Roboto-Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
   }
 
   &__checkbox {
@@ -95,12 +134,17 @@
   &__btn {
     display: block;
     margin: 0 auto;
-    width: 199px;
-    height: 55px;
+    padding: 20px 40px;
+    // width: 199px;
+    // height: 55px;
     border: none;
     border-radius: 3px;
     background-color: $orange-color;
-    @include font-size-16px-weight-700;
+    font-family: "Roboto-Bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
     color: #ffffff;
   }
 

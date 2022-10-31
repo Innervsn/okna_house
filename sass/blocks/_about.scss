@@ -1,0 +1,145 @@
+.about-container {
+  @include container;
+  margin-bottom: 87px;
+}
+
+.about__title {
+  text-align: center;
+  margin: 0 0 32px 0;
+}
+
+.about-slider {
+  text-align: center;
+  // display: flex;
+  // justify-content: center;
+  gap: 30px;
+  margin-bottom: 35px;
+
+  &__btn {
+    width: 170px;
+    height: 40px;
+    border: none;
+    font-family: "Roboto-Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    color: #2f2f51;
+  }
+
+  &__btn:hover {
+    width: 170px;
+    height: 40px;
+    border: none;
+    opacity: 0.7;
+    cursor: pointer;
+    border-radius: 3px;
+    font-family: "Roboto-Bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    background-color: $orange-color;
+    color: #ffffff;
+  }
+
+  &__btn:focus {
+    width: 170px;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    font-family: "Roboto-Bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    background-color: $orange-color;
+    color: #ffffff;
+  }
+}
+
+.about-description {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 68px;
+  border-radius: 3px;
+  background-color: #ffffff;
+
+  &__description {
+    width: 50%;
+    height: 465px;
+  }
+
+  &__logo {
+    display: block;
+    padding: 46px 0px 0px 50px;
+    margin-bottom: 62px;
+  }
+
+  &__text {
+    width: 300px;
+    margin: 0;
+    padding-right: 52px;
+    float: right;
+    font-family: "Roboto-Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  &__img {
+    width: 50%;
+    background-image: url(/images/about-block/about_desc_img.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.about-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 40px;
+
+  &__logo {
+    margin-right: 22px;
+  }
+
+  &__card {
+    display: flex;
+    margin-bottom: 100px;
+  }
+
+  &__description {
+    width: 200px;
+  }
+
+  &__title {
+    margin: 0;
+  }
+}
+
+.about__btn {
+  display: block;
+  margin: 0 auto;
+  padding: 19px 28px;
+  // width: 312px;
+  // height: 55px;
+  border: none;
+  border-radius: 3px;
+  font-family: "Roboto-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  background-color: $orange-color;
+  color: #ffffff;
+}
+
+.about__btn-img {
+  margin-right: 24px;
+  vertical-align: middle;
+}
