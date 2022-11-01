@@ -9,7 +9,7 @@
 .services__title {
   margin: 0px 0px 49px 0px;
   text-align: center;
-  font-family: "Roboto-Bold";
+  font-family: "Roboto-Bold", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -82,7 +82,7 @@
   &__title {
     width: 300px;
     margin: 0px 0px 0px 28px;
-    font-family: "Roboto-Bold";
+    font-family: "Roboto-Bold", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -93,7 +93,7 @@
   &__description {
     width: 300px;
     margin: 0;
-    font-family: "Roboto-Regular";
+    font-family: "Roboto-Regular", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;

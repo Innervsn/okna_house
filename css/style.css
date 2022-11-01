@@ -1,7 +1,6 @@
 .body {
   margin: 0;
   background: #f2f2f2;
-  box-sizing: border-box;
 }
 
 @font-face {
@@ -35,11 +34,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.header__logo {
-  width: 90px;
-  height: 63px;
 }
 
 .header-navigation__list {
@@ -107,14 +101,9 @@
 .preview-about {
   padding: 110px 0 0 90px;
 }
-@media screen and (max-width: 1200px) {
-  .preview-about {
-    padding: 110px 0 110px 72px;
-  }
-}
 .preview-about__text {
   display: block;
-  font-family: "Roboto-Bold";
+  font-family: "Roboto-Bold", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -124,7 +113,7 @@
 .preview-about__title {
   width: 450px;
   margin-bottom: 35px;
-  font-family: "Roboto-Thin";
+  font-family: "Roboto-Thin", sans-serif;
   font-style: normal;
   font-weight: 100;
   font-size: 36px;
@@ -139,7 +128,7 @@
 }
 .preview-about__item-description {
   width: 176px;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto-Regular", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -152,12 +141,6 @@
 
 .preview-measure {
   padding: 70px 0 60px 0;
-  box-sizing: border-box;
-}
-@media screen and (max-width: 1200px) {
-  .preview-measure {
-    display: none;
-  }
 }
 
 .preview-form {
@@ -171,7 +154,7 @@
 .preview-form__title {
   margin: 0 0 27px 0;
   text-align: center;
-  font-family: "Roboto-Bold";
+  font-family: "Roboto-Bold", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -190,7 +173,7 @@
   background: #e2e2e2;
 }
 .preview-form__input::-moz-placeholder {
-  font-family: "Roboto-Regular";
+  font-family: "Roboto-Regular", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -198,7 +181,7 @@
   color: #424268;
 }
 .preview-form__input:-ms-input-placeholder {
-  font-family: "Roboto-Regular";
+  font-family: "Roboto-Regular", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -206,7 +189,7 @@
   color: #424268;
 }
 .preview-form__input::placeholder {
-  font-family: "Roboto-Regular";
+  font-family: "Roboto-Regular", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -216,7 +199,7 @@
 .preview-form__label {
   display: flex;
   margin-bottom: 24px;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto-Regular", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -232,7 +215,7 @@
   border: none;
   border-radius: 3px;
   background-color: #ef7f04;
-  font-family: "Roboto-Bold";
+  font-family: "Roboto-Bold", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -257,7 +240,7 @@
 .services__title {
   margin: 0px 0px 49px 0px;
   text-align: center;
-  font-family: "Roboto-Bold";
+  font-family: "Roboto-Bold", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -301,7 +284,7 @@
 .services-list__title {
   width: 300px;
   margin: 0px 0px 0px 28px;
-  font-family: "Roboto-Bold";
+  font-family: "Roboto-Bold", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -311,7 +294,7 @@
 .services-list__description {
   width: 300px;
   margin: 0;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto-Regular", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -331,7 +314,7 @@
 .products__title {
   text-align: center;
   margin: 0 0 34px 0;
-  font-family: "Roboto-Bold";
+  font-family: "Roboto-Bold", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -341,7 +324,6 @@
 
 .products-slider {
   text-align: center;
-  gap: 30px;
   margin-bottom: 27px;
 }
 .products-slider__btn {
@@ -349,7 +331,7 @@
   width: 130px;
   height: 39px;
   background: #f2f2f2;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto-Regular", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -364,7 +346,7 @@
   opacity: 0.7;
   cursor: pointer;
   background-color: #ef7f04;
-  font-family: "Roboto-Bold";
+  font-family: "Roboto-Bold", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -377,7 +359,7 @@
   border: none;
   border-radius: 3px;
   background-color: #ef7f04;
-  font-family: "Roboto-Bold";
+  font-family: "Roboto-Bold", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -404,7 +386,7 @@
 .products-block__title {
   margin: 0;
   color: #ef7f04;
-  font-family: "Roboto-Bold";
+  font-family: "Roboto-Bold", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -413,7 +395,7 @@
 .products-block__text {
   margin: 40px 0;
   width: 69%;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto-Regular", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -428,7 +410,7 @@
 .products-block__characteristic-title {
   margin: 0;
   padding-right: 5px;
-  font-family: "Roboto-Medium";
+  font-family: "Roboto-Medium", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -443,7 +425,7 @@
 .products-block__value {
   margin: 0;
   padding-left: 5px;
-  font-family: "Roboto-Bold";
+  font-family: "Roboto-Bold", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -485,7 +467,7 @@
 }
 .quality-items__description {
   text-align: center;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto-Regular", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -498,7 +480,7 @@
   border-radius: 3px;
   border: none;
   background-color: #3b3a63;
-  font-family: "Roboto-Bold";
+  font-family: "Roboto-Bold", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -529,14 +511,13 @@
 
 .about-slider {
   text-align: center;
-  gap: 30px;
   margin-bottom: 35px;
 }
 .about-slider__btn {
   width: 170px;
   height: 40px;
   border: none;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto-Regular", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -552,7 +533,7 @@
   opacity: 0.7;
   cursor: pointer;
   border-radius: 3px;
-  font-family: "Roboto-Bold";
+  font-family: "Roboto-Bold", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -565,7 +546,7 @@
   height: 40px;
   border: none;
   border-radius: 3px;
-  font-family: "Roboto-Bold";
+  font-family: "Roboto-Bold", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -595,7 +576,7 @@
   margin: 0;
   padding-right: 52px;
   float: right;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto-Regular", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -614,12 +595,12 @@
   justify-content: space-between;
   padding: 0 40px;
 }
-.about-cards__logo {
-  margin-right: 22px;
-}
 .about-cards__card {
   display: flex;
   margin-bottom: 100px;
+}
+.about-cards__logo {
+  margin-right: 22px;
 }
 .about-cards__description {
   width: 200px;
@@ -634,7 +615,7 @@
   padding: 19px 28px;
   border: none;
   border-radius: 3px;
-  font-family: "Roboto-Bold";
+  font-family: "Roboto-Bold", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -645,5 +626,87 @@
 
 .about__btn-img {
   margin-right: 24px;
+  vertical-align: middle;
+}
+
+.portfolio-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 100px 70px 100px;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 3px;
+  background-color: #ffffff;
+}
+
+.portfolio-title {
+  margin: 0 0 48px 0;
+  font-family: "Roboto-Bold", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #2f2f51;
+}
+
+.portfolio-items {
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+}
+.portfolio-items__img {
+  border-radius: 3px;
+  filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.25));
+}
+
+.questions {
+  margin-bottom: 86px;
+}
+
+.questions-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #ef7f04;
+  border-radius: 3px;
+}
+
+.questions__title {
+  margin: 0;
+  padding: 40px 0 50px 0;
+  text-align: center;
+  font-family: "Roboto-Bold", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+.questions-block {
+  padding: 0 101px 63px;
+}
+.questions-block__question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  width: 100%;
+  height: 82px;
+  padding: 0 30px 0 19px;
+  margin-bottom: 14px;
+  border: none;
+  border-radius: 3px;
+  background: #eeeef3;
+  font-family: "Roboto-Bold", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #2f2f51;
+}
+.questions-block__question:hover {
+  color: #ef7f04;
+}
+.questions-block__img {
   vertical-align: middle;
 }/*# sourceMappingURL=style.css.map */
