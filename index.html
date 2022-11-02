@@ -10,6 +10,8 @@
   <body class="body">
     <header class="header">
       <div class="header-container">
+        <div class="menu"></div>
+
         <div class="header__logo">
           <img src="./images/header-block/header_logo.png" alt="" />
         </div>
@@ -128,22 +130,32 @@
           <div class="preview-measure">
             <form class="preview-form" action="">
               <h2 class="preview-form__title">Вызвать замершика на дом</h2>
+
               <input
                 class="preview-form__input"
                 type="text"
                 placeholder="Представьтесь, пожалуйста" />
+
               <input
                 class="preview-form__input"
                 type="tel"
                 placeholder="Номер телефона" />
+
               <input
                 class="preview-form__input"
                 type="email"
                 placeholder="E-mail" />
-              <label class="preview-form__label" for="">
-                <input class="preview-form__checkbox" type="checkbox" />Согласен
-                на обработку персональных данных в соответствии с политикой
-                конфиденциальности
+
+              <input
+                class="preview-form__checkbox"
+                type="checkbox"
+                id="check"
+                name="check"
+                value="yes" />
+
+              <label class="preview-form__label" for="check">
+                Согласен на обработку персональных данных в соответствии с
+                политикой конфиденциальности
               </label>
               <button class="preview-form__btn">Отправить заявку</button>
               <img
@@ -242,12 +254,7 @@
           </div>
 
           <div class="products-block">
-            <div class="products-block__img">
-              <!-- <img
-                class="products-block__img-window"
-                src="./images/production-block/window_standart.png"
-                alt="" /> -->
-            </div>
+            <div class="products-block__img"></div>
 
             <div class="products-block__description">
               <h2 class="products-block__title">Rehau Blitz New</h2>
@@ -501,14 +508,17 @@
               class="portfolio-items__img"
               src="./images/portfolio-block/img1.png"
               alt="" />
+
             <img
               class="portfolio-items__img"
               src="./images/portfolio-block/img2.png"
               alt="" />
+
             <img
               class="portfolio-items__img"
               src="./images/portfolio-block/img3.png"
               alt="" />
+
             <img
               class="portfolio-items__img"
               src="./images/portfolio-block/img4.png"
@@ -517,58 +527,124 @@
         </div>
       </section>
 
-      <section class="questions">
-        <div class="questions-container">
-          <h3 class="questions__title">Вопрос-ответ</h3>
+      <section class="faq">
+        <div class="faq-container">
+          <h3 class="faq__title">Вопрос-ответ</h3>
 
-          <div class="questions-block">
-            <button class="questions-block__question">
-              Сколько по времени занимает изготовление пластиковых окон?
-              <img
-                class="questions-block__img"
-                src="./images/questions-block/Vector.svg"
-                alt="" />
-            </button>
+          <div class="faq-block">
+            <details class="faq-block__item">
+              <summary class="faq-block__question">
+                Сколько по времени занимает изготовление пластиковых окон?
+                <img
+                  class="faq-block__img"
+                  src="./images/questions-block/Vector.svg"
+                  alt="" />
 
-            <button class="questions-block__question">
-              Какие существуют способы оплаты?
-              <img
-                class="questions-block__img"
-                src="./images/questions-block/Vector.svg"
-                alt="" />
-            </button>
+                <img
+                  class="faq-block__img-orange"
+                  src="./images/questions-block/Vector-orange.svg"
+                  alt="" />
+              </summary>
 
-            <button class="questions-block__question">
-              Где я могу посмотреть образцы?
-              <img
-                class="questions-block__img"
-                src="./images/questions-block/Vector.svg"
-                alt="" />
-            </button>
+              <p class="faq-block__answer">
+                Нет, команда мастеров все сами аккуратно доставят и внесут.
+              </p>
+            </details>
 
-            <button class="questions-block__question">
-              Зачем вызывать замерщика? Я могу дать размеры
-              <img
-                class="questions-block__img"
-                src="./images/questions-block/Vector.svg"
-                alt="" />
-            </button>
+            <details class="faq-block__item">
+              <summary class="faq-block__question">
+                Какие существуют способы оплаты?
+                <img
+                  class="faq-block__img"
+                  src="./images/questions-block/Vector.svg"
+                  alt="" />
 
-            <button class="questions-block__question">
-              Хотелось бы отделать балкон. Поможете?
-              <img
-                class="questions-block__img"
-                src="./images/questions-block/Vector.svg"
-                alt="" />
-            </button>
+                <img
+                  class="faq-block__img-orange"
+                  src="./images/questions-block/Vector-orange.svg"
+                  alt="" />
+              </summary>
 
-            <button class="questions-block__question">
-              Мне надо нанимать грузчиков для подъема?
-              <img
-                class="questions-block__img"
-                src="./images/questions-block/Vector.svg"
-                alt="" />
-            </button>
+              <p class="faq-block__answer">
+                Нет, команда мастеров все сами аккуратно доставят и внесут.
+              </p>
+            </details>
+
+            <details class="faq-block__item">
+              <summary class="faq-block__question">
+                Где я могу посмотреть образцы?
+                <img
+                  class="faq-block__img"
+                  src="./images/questions-block/Vector.svg"
+                  alt="" />
+
+                <img
+                  class="faq-block__img-orange"
+                  src="./images/questions-block/Vector-orange.svg"
+                  alt="" />
+              </summary>
+
+              <p class="faq-block__answer">
+                Нет, команда мастеров все сами аккуратно доставят и внесут.
+              </p>
+            </details>
+
+            <details class="faq-block__item">
+              <summary class="faq-block__question">
+                Зачем вызывать замерщика? Я могу дать размеры
+                <img
+                  class="faq-block__img"
+                  src="./images/questions-block/Vector.svg"
+                  alt="" />
+
+                <img
+                  class="faq-block__img-orange"
+                  src="./images/questions-block/Vector-orange.svg"
+                  alt="" />
+              </summary>
+
+              <p class="faq-block__answer">
+                Нет, команда мастеров все сами аккуратно доставят и внесут.
+              </p>
+            </details>
+
+            <details class="faq-block__item">
+              <summary class="faq-block__question">
+                Хотелось бы отделать балкон. Поможете?
+                <img
+                  class="faq-block__img"
+                  src="./images/questions-block/Vector.svg"
+                  alt="" />
+
+                <img
+                  class="faq-block__img-orange"
+                  src="./images/questions-block/Vector-orange.svg"
+                  alt="" />
+              </summary>
+
+              <p class="faq-block__answer">
+                Нет, команда мастеров все сами аккуратно доставят и внесут.
+              </p>
+            </details>
+
+            <details class="faq-block__item">
+              <summary class="faq-block__question">
+                Мне надо нанимать грузчиков для подъема?
+                <img
+                  class="faq-block__img"
+                  src="./images/questions-block/Vector.svg"
+                  alt="" />
+
+                <img
+                  class="faq-block__img-orange"
+                  src="./images/questions-block/Vector-orange.svg"
+                  alt="" />
+              </summary>
+
+              <p class="faq-block__answer">
+                Нет, команда мастеров все сами аккуратно доставят и внесут.
+              </p>
+            </details>
           </div>
         </div>
       </section>

@@ -1,5 +1,9 @@
 .quality {
   margin-bottom: 95px;
+
+  @media screen and (max-width: 992px) {
+    margin-bottom: 40px;
+  }
 }
 
 .quality-container {
@@ -17,14 +21,19 @@
   &__banner {
     margin-bottom: 55px;
   }
+
+  @media screen and (max-width: 992px) {
+    padding: 35px 110px 50px 110px;
+  }
 }
 
 .quality-items {
   display: flex;
   justify-content: space-between;
+  // flex-wrap: wrap;
 
   &__item {
-    width: 19%;
+    width: 220px;
   }
 
   &__logo {
@@ -40,6 +49,12 @@
     font-size: 16px;
     line-height: 19px;
     color: #ffffff;
+  }
+
+  @media screen and (max-width: 992px) {
+    gap: 45px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 

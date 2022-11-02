@@ -17,6 +17,7 @@
     gap: 30px;
     padding: 0;
     list-style: none;
+    white-space: nowrap;
   }
 
   // &__item {
@@ -35,6 +36,11 @@
       color: $orange-color;
     }
   }
+
+  @media screen and (max-width: 992px) {
+    display: none;
+  }
+
 }
 
 .header-buttons {
@@ -42,6 +48,7 @@
   gap: 14px;
 
   &__btn {
+    white-space: nowrap;
     padding: 13px;
     border: none;
     border-radius: 3px;

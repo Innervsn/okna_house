@@ -1,11 +1,21 @@
 .about-container {
   @include container;
   margin-bottom: 87px;
+
+  @media screen and (max-width: 992px){
+    margin-bottom: 50px;
+  }
 }
 
 .about__title {
   text-align: center;
   margin: 0 0 32px 0;
+  font-family: "Roboto-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #2f2f51;
 }
 
 .about-slider {
@@ -93,7 +103,7 @@
   &__img {
     width: 50%;
     background-image: url(/images/about-block/about_desc_img.svg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
   }
 }
@@ -107,6 +117,10 @@
   &__card {
     display: flex;
     margin-bottom: 100px;
+
+    @media screen and (max-width: 992px) {
+      margin-bottom: 40px;
+    }
   }
 
   &__logo {
@@ -119,6 +133,10 @@
 
   &__title {
     margin: 0;
+  }
+
+  @media screen and (max-width: 992px) {
+    padding: 0 142px;
   }
 }
 

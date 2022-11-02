@@ -77,8 +77,10 @@
     width: 50%;
     // border-radius: 3px;
     background: url(/images/production-block/window_standart.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    // background-size: contain;
+    // background-repeat: no-repeat;
 
     // &-window {
     //   height: 100%;
@@ -148,6 +150,4 @@
     line-height: 21px;
     color: #000000;
   }
-
-
 }
