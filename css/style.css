@@ -948,27 +948,324 @@
   color: #000000;
 }
 
-.contacts__title {
-  text-align: center;
-}
-
 .contacts-container {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.contacts-wrapper {
-  display: flex;
-  position: relative;
-  padding: 0 50px;
+.contacts__title {
+  margin: 0 0 60px;
+  text-align: center;
+  font-family: "Roboto-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #2f2f51;
 }
 
+.contacts-wrapper {
+  margin-bottom: 40px;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+@media screen and (max-width: 992px) {
+  .contacts-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.contacts-block__title {
+  font-family: "Roboto-Bold", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #2f2f51;
+}
+.contacts-block__phones {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+.contacts-block__phones-link {
+  white-space: nowrap;
+  text-decoration: none;
+  font-family: "Roboto-Bold", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 36px;
+  color: #000000;
+}
+.contacts-block__address {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.contacts-block__address-img {
+  margin-right: 35px;
+}
+.contacts-block__address-text {
+  white-space: nowrap;
+  font-family: "Roboto-Regular", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+.contacts-block__mail {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.contacts-block__mail-img {
+  margin-right: 33px;
+}
+.contacts-block__mail-link {
+  text-decoration: none;
+  font-family: "Roboto-Regular", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
 .contacts-block__text {
-  width: 230px;
-  font-family: "Roboto-Regular";
+  width: 215px;
+  font-family: "Roboto-Regular", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   color: #2f2f51;
+}
+.contacts-block__web-icon {
+  margin-right: 13px;
+}
+@media screen and (max-width: 992px) {
+  .contacts-block {
+    margin-bottom: 145px;
+  }
+}
+
+.contacts-form__block {
+  position: relative;
+  width: 510px;
+  padding: 55px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background: #ffffff;
+}
+.contacts-form__workers-img {
+  position: absolute;
+  left: -312px;
+  bottom: -40px;
+}
+@media screen and (max-width: 992px) {
+  .contacts-form__workers-img {
+    top: -390px;
+    left: 233px;
+  }
+}
+.contacts-form__title {
+  margin: 0 0 30px;
+  text-align: center;
+  font-family: "Roboto-Bold", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #2f2f51;
+}
+.contacts-form__input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 20px;
+  padding-left: 16px;
+  height: 50px;
+  border-radius: 3px;
+  border-style: none;
+  outline: none;
+  background: #e2e2e2;
+  font-family: "Roboto-Regular", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #424268;
+}
+.contacts-form__input::-moz-placeholder {
+  font-family: "Roboto-Regular", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #424268;
+}
+.contacts-form__input:-ms-input-placeholder {
+  font-family: "Roboto-Regular", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #424268;
+}
+.contacts-form__input::placeholder {
+  font-family: "Roboto-Regular", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #424268;
+}
+.contacts-form__input--placeholder {
+  height: 135px;
+  margin-bottom: 12px;
+  padding-top: 16px;
+  resize: none;
+}
+.contacts-form__input--placeholder::-moz-placeholder {
+  font-family: "Roboto-Regular", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #424268;
+}
+.contacts-form__input--placeholder:-ms-input-placeholder {
+  font-family: "Roboto-Regular", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #424268;
+}
+.contacts-form__input--placeholder::placeholder {
+  font-family: "Roboto-Regular", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #424268;
+}
+.contacts-form__checkbox {
+  display: inline-block;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.contacts-form__checkbox + label {
+  display: inline-flex;
+  align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.contacts-form__checkbox + label::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border-radius: 3px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  background: #e2e2e2;
+}
+.contacts-form__checkbox:checked + label::before {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 17px;
+  background-image: url("/images/preview-block/Check.svg");
+}
+.contacts-form__label {
+  margin-bottom: 32px;
+  font-family: "Roboto-Regular", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #2f2f51;
+}
+.contacts-form__btn {
+  display: block;
+  margin: 0 auto;
+  width: 258px;
+  height: 53px;
+  border: none;
+  background: #2f2f51;
+  border-radius: 3px;
+  font-family: "Roboto-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+.basement {
+  background: #2f2f51;
+}
+
+.basement-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 146px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 56px;
+}
+
+.basement__item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.basement__title {
+  white-space: nowrap;
+  font-family: "Roboto-Regular", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height, or 125% */
+  color: #ffffff;
+}
+
+.basement__politics {
+  display: flex;
+  gap: 20px;
+}
+
+.basement__politics-confidentiality {
+  white-space: nowrap;
+  font-family: "Roboto-Regular", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 36px;
+  color: #ffffff;
+}
+
+.basement__politics-agreement {
+  white-space: nowrap;
+  font-family: "Roboto-Regular", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 36px;
+  color: #ffffff;
 }/*# sourceMappingURL=style.css.map */
