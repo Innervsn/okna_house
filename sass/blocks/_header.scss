@@ -2,14 +2,20 @@
   @include container;
   height: 97px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-}
 
-// .header__logo {
-//   width: 90px;
-//   height: 63px;
-// }
+  @media screen and (max-width: 992px) {
+    justify-content: unset;
+    padding: 0 56px;
+    position: relative;
+
+    .header-buttons {
+      position: absolute;
+      right: 56px;
+    }
+  }
+}
 
 .header-menu {
   display: none;
@@ -18,41 +24,36 @@
 @media screen and (max-width: 992px) {
   .header-menu {
     display: block;
-  }
-
-  .visuallyHidden {
-    position: absolute;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    width: 1px;
-    margin: -1px;
-    padding: 0;
-    border: 0;
-  }
-
-  // .header-menu {
-  //   width: 70%;
-  //   margin: 0 auto;
-  //   display: flex;
-  //   justify-content: space-between;
-  // }
-
-  .hamburger {
-    width: 30px;
-    height: 30px;
-    position: relative;
-  }
-
-  .hamburger .bar {
-    padding: 0;
     width: 56px;
-    height: 7px;
-    background-color: #ef7f04;
-    display: block;
-    border-radius: 2px;
-    transition: all 0.4s ease-in-out;
-    position: absolute;
+    margin-right: 45px;
+
+    &__block {
+      position: absolute;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      width: 1px;
+      margin: -1px;
+      padding: 0;
+      border: 0;
+    }
+
+    &__hamburger {
+      width: 30px;
+      height: 30px;
+      position: relative;
+    }
+
+    &__hamburger .bar {
+      padding: 0;
+      width: 56px;
+      height: 7px;
+      background-color: #ef7f04;
+      display: block;
+      border-radius: 2px;
+      transition: all 0.4s ease-in-out;
+      position: absolute;
+    }
   }
 
   .bar1 {
@@ -72,53 +73,51 @@
     bottom: 0;
   }
 
-  .hamburger2 .bar2,
-  .hamburger3 .bar3,
-  .hamburger4 .bar4 {
+  .hamburger--bar .bar4 {
     top: 13.5px;
   }
 
-  .hamburger4 .bar5 {
+  .hamburger--bar .bar5 {
     bottom: -2px;
   }
 
-  .hamburger4 .bar {
+  .hamburger--bar .bar {
     transition: all 0.4s ease-in-out, transform 0.4s ease-in-out 0.4s;
   }
 
-  .hamburger4 .bar2 {
+  .hamburger--bar .bar2 {
     width: 1px;
     transform: rotate(90deg);
     left: 13.5px;
   }
 
-  .hamburger4 .bar3 {
+  .hamburger--bar .bar3 {
     width: 1px;
     left: 13.5px;
   }
 
-  .checkbox4:checked + label > .hamburger4 > .bar1 {
+  .header-menu__block:checked + label > .hamburger--bar > .bar1 {
     top: 13.5px;
     background-color: transparent;
   }
 
-  .checkbox4:checked + label > .hamburger4 > .bar2 {
-    left: 0px;
+  .header-menu__block:checked + label > .hamburger--bar > .bar2 {
+    left: 7px;
     width: 45px;
     transform: rotate(45deg);
   }
 
-  .checkbox4:checked + label > .hamburger4 > .bar3 {
-    left: 0;
+  .header-menu__block:checked + label > .hamburger--bar > .bar3 {
+    left: 7px;
     width: 45px;
     transform: rotate(-45deg);
   }
 
-  .checkbox4:checked + label > .hamburger4 > .bar4 {
+  .header-menu__block:checked + label > .hamburger--bar > .bar4 {
     background-color: transparent;
   }
 
-  .checkbox4:checked + label > .hamburger4 > .bar5 {
+  .header-menu__block:checked + label > .hamburger--bar > .bar5 {
     bottom: 13.5px;
     background-color: transparent;
   }
@@ -133,8 +132,9 @@
     white-space: nowrap;
   }
 
-  // &__item {
-  // }
+  &__item {
+    position: relative;
+  }
 
   &__link {
     text-decoration: none;
@@ -147,6 +147,17 @@
 
     &--hover:hover {
       color: $orange-color;
+    }
+
+    &--hover:hover::after {
+      content: "";
+      position: absolute;
+      color: $orange-color;
+      top: -39px;
+      left: 0px;
+      width: 100%;
+      height: 4px;
+      background-color: $orange-color;
     }
   }
 
@@ -161,7 +172,7 @@
 
   &__btn {
     white-space: nowrap;
-    padding: 13px;
+    padding: 12px 25px 12px 15px;
     border: none;
     border-radius: 3px;
     font-family: "Roboto-Bold", sans-serif;

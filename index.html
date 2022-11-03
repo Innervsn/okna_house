@@ -12,12 +12,12 @@
       <div class="header-container">
         <div class="header-menu">
           <input
+            class="header-menu__block"
             type="checkbox"
-            id="checkbox4"
-            class="checkbox4 visuallyHidden" />
+            id="checkbox-menu" />
 
-          <label for="checkbox4">
-            <div class="hamburger hamburger4">
+          <label class="header-menu__label" for="checkbox-menu">
+            <div class="header-menu__hamburger hamburger--bar">
               <span class="bar bar1"></span>
               <span class="bar bar2"></span>
               <span class="bar bar3"></span>
@@ -664,5 +664,102 @@
         </div>
       </section>
     </main>
+
+    <footer class="footer">
+      <section class="contacts">
+        <h1 class="contacts__title">Контакты</h1>
+        <div class="contacts-container">
+          <div class="contacts-wrapper">
+            <div class="contacts-block">
+              <h2 class="contacts-block__title">Бесплатная консультация:</h2>
+
+              <div class="contacts-block__phones">
+                <img src="./images/contacts-block/phone.svg" alt="" />
+                <span>8 (4932) 34 - 31 - 40</span>
+                <span>8 (905) 109 - 31 - 40</span>
+              </div>
+
+              <div class="contacts-block__address">
+                <img src="./images/contacts-block/address_logo.svg" alt="" />
+                г. Иваново, ул. Генерала Хлебникова, д.54, оф.303
+              </div>
+
+              <div class="contacts-block__mail">
+                <img src="./images/contacts-block/email_logo.svg" alt="" />
+                okna@haus.ru
+              </div>
+
+              <p class="contacts-block__text">
+                Установку должны выполнять только эксперты. Нам доверяют сотни
+                семей. Узнайте поробнее, какие решения вам подходят. Вы можете
+                приобрести недорогие товары при гарантированно высоком качестве.
+              </p>
+
+              <div class="contacts-block__web">
+                <img src="./images/contacts-block/vk_logo.png" alt="" />
+                <img src="./images/contacts-block/fb_logo.png" alt="" />
+                <img src="./images/contacts-block/insta_logo.png" alt="" />
+                <img src="./images/contacts-block/teleg_logo.png" alt="" />
+                <img src="./images/contacts-block/yout_logo.png" alt="" />
+                <img src="./images/contacts-block/ok_logo.png" alt="" />
+              </div>
+            </div>
+
+            <div class="contacts-form">
+              <form class="contacts-form__block" action="">
+                <h2 class="contacts-form__title">Остались вопросы?</h2>
+
+                <input
+                  class="contacts-form__name"
+                  type="text"
+                  placeholder="Ваше имя" />
+
+                <input
+                  class="contacts-form__email"
+                  type="text"
+                  placeholder="E-mail" />
+
+                <textarea
+                  class="contacts-form__text"
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="10"
+                  placeholder="E-mail"></textarea>
+
+                <input class="contacts-form__checkbox" type="checkbox" />
+
+                <label class="contacts-form__label" for="">
+                  Я согласен(на) на обработку персональных данных
+                </label>
+
+                <button class="contacts-form__btn">Отправить сообщение</button>
+              </form>
+            </div>
+
+            <img class="contacts__workers-img" src="" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="basement">
+        <div class="basement-container">
+          <div class="basement__logo">
+            <img src="./images/contacts-block/company_logo.svg" alt="" />
+          </div>
+          <div class="basement__title">© ООО “Окна Хаус”, 2011 - 2022</div>
+
+          <div class="basement__politics">
+            <span class="basement__politics-confidentiality">
+              Политика кофиденциальности
+            </span>
+
+            <span class="basement__politics-agreement">
+              Политика кофиденциальности Пользовательское соглашение
+            </span>
+          </div>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
