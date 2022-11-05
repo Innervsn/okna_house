@@ -5,7 +5,7 @@
 .contacts__title {
   margin: 0 0 60px;
   text-align: center;
-  font-family: "Roboto-Bold";
+  font-family: "Roboto-Bold", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -44,7 +44,6 @@
   }
 
   &__phones-link {
-    // display: block;
     white-space: nowrap;
     text-decoration: none;
     font-family: "Roboto-Bold", sans-serif;
@@ -104,9 +103,6 @@
     line-height: 22px;
     color: #2f2f51;
   }
-
-  // &__web-link {
-  // }
 
   &__web-icon {
     margin-right: 13px;
@@ -214,7 +210,6 @@
     flex-shrink: 0;
     flex-grow: 0;
     border-radius: 3px;
-    // border: 1px solid #adb5bd;
     margin-right: 10px;
     background-repeat: no-repeat;
     background-position: center center;
@@ -247,11 +242,17 @@
     border: none;
     background: #2f2f51;
     border-radius: 3px;
-    font-family: "Roboto-Bold";
+    font-family: "Roboto-Bold", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
     color: #ffffff;
+  }
+
+  &__btn:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.5s;
   }
 }

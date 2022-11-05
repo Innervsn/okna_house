@@ -1,59 +1,53 @@
 .basement {
   background: #2f2f51;
-}
 
-.basement-container {
-  @include container;
-  height: 146px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 56px;
-}
+  &-container {
+    @include container;
+    height: 146px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 56px;
+  }
 
-.basement__item {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
 
-// .basement__logo {
-//   margin-right: 22px;
-// }
+  &__title {
+    white-space: nowrap;
+    font-family: "Roboto-Regular", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+  }
 
-.basement__title {
-  white-space: nowrap;
-  font-family: "Roboto-Regular", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  /* identical to box height, or 125% */
-  color: #ffffff;
-}
+  &__politics {
+    display: flex;
+    gap: 20px;
+  }
 
-.basement__politics {
-  display: flex;
-  // align-items: center;
-  gap: 20px;
-}
+  &__politics-confidentiality {
+    white-space: nowrap;
+    font-family: "Roboto-Regular", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 36px;
+    color: #ffffff;
+  }
 
-.basement__politics-confidentiality {
-  white-space: nowrap;
-  font-family: "Roboto-Regular", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 36px;
-  color: #ffffff;
-}
-
-.basement__politics-agreement {
-  white-space: nowrap;
-  font-family: "Roboto-Regular", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 36px;
-  color: #ffffff;
+  &__politics-agreement {
+    white-space: nowrap;
+    font-family: "Roboto-Regular", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 36px;
+    color: #ffffff;
+  }
 }

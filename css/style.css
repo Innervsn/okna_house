@@ -215,13 +215,11 @@
     margin-bottom: 47px;
   }
 }
-
 .preview-container {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
 }
-
 .preview-about {
   padding: 110px 0 0 90px;
 }
@@ -250,6 +248,9 @@
 .preview-about__item {
   margin-right: 33px;
 }
+.preview-about__item-icon {
+  height: 81px;
+}
 .preview-about__item-description {
   width: 176px;
   font-family: "Roboto-Regular", sans-serif;
@@ -259,15 +260,11 @@
   line-height: 18px;
   color: #ffffff;
 }
-.preview-about__item-icon {
-  height: 81px;
-}
 @media screen and (max-width: 992px) {
   .preview-about {
     padding: 110px 0 130px 90px;
   }
 }
-
 .preview-measure {
   padding: 70px 0 60px 0;
 }
@@ -276,7 +273,6 @@
     display: none;
   }
 }
-
 .preview-form {
   width: 406px;
   position: relative;
@@ -386,6 +382,11 @@
   line-height: 16px;
   color: #ffffff;
 }
+.preview-form__btn:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.5s;
+}
 .preview-form__ruler {
   position: absolute;
   left: -7px;
@@ -400,12 +401,10 @@
     margin-bottom: 30px;
   }
 }
-
 .services-container {
   max-width: 1200px;
   margin: 0 auto;
 }
-
 .services__title {
   margin: 0px 0px 49px 0px;
   text-align: center;
@@ -416,7 +415,6 @@
   line-height: 28px;
   color: #2f2f51;
 }
-
 .services-list {
   display: flex;
   flex-wrap: wrap;
@@ -480,12 +478,10 @@
 .products {
   margin-bottom: 55px;
 }
-
 .products-container {
   max-width: 1200px;
   margin: 0 auto;
 }
-
 .products__title {
   text-align: center;
   margin: 0 0 34px 0;
@@ -496,7 +492,6 @@
   line-height: 28px;
   color: #2f2f51;
 }
-
 .products-slider {
   text-align: center;
   margin-bottom: 27px;
@@ -541,7 +536,6 @@
   line-height: 21px;
   color: #ffffff;
 }
-
 .products-block {
   display: flex;
   border-radius: 3px;
@@ -617,13 +611,11 @@
     margin-bottom: 40px;
   }
 }
-
 .quality-container {
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
 }
-
 .quality-advantages {
   margin-bottom: 55px;
   padding: 35px 50px 50px 50px;
@@ -639,7 +631,6 @@
     padding: 35px 110px 50px 110px;
   }
 }
-
 .quality-items {
   display: flex;
   justify-content: space-between;
@@ -667,7 +658,6 @@
     justify-content: center;
   }
 }
-
 .quality-button {
   padding: 18px 55px 18px 35px;
   border-radius: 3px;
@@ -684,7 +674,6 @@
   padding-right: 22px;
   vertical-align: middle;
 }
-
 .quality-button:hover {
   cursor: pointer;
   opacity: 0.7;
@@ -816,6 +805,21 @@
 }
 .about-cards__title {
   margin: 0;
+  font-family: "Roboto-Bold", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #2f2f51;
+}
+.about-cards__text {
+  font-family: "Roboto-Regular", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
 }
 @media screen and (max-width: 992px) {
   .about-cards {
@@ -836,6 +840,12 @@
   line-height: 19px;
   background-color: #ef7f04;
   color: #ffffff;
+}
+
+.about__btn:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.5s;
 }
 
 .about__btn-img {
@@ -881,14 +891,12 @@
 .faq {
   margin-bottom: 86px;
 }
-
 .faq-container {
   max-width: 1200px;
   margin: 0 auto;
   background: #ef7f04;
   border-radius: 3px;
 }
-
 .faq__title {
   margin: 0;
   padding: 40px 0 50px 0;
@@ -900,7 +908,6 @@
   line-height: 28px;
   color: #ffffff;
 }
-
 .faq-block {
   padding: 0 101px 63px;
 }
@@ -930,17 +937,17 @@
 .faq-block__question:hover .faq-block__img {
   display: none;
 }
-.faq-block__question:hover .faq-block__img-orange {
+.faq-block__question:hover .faq-block__img--orange {
   display: block;
 }
-.faq-block__img-orange {
+.faq-block__img--orange {
   display: none;
 }
 .faq-block__answer {
   margin: 0;
   padding: 0 30px 30px 19px;
   background: #eeeef3;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto-Regular", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -956,7 +963,7 @@
 .contacts__title {
   margin: 0 0 60px;
   text-align: center;
-  font-family: "Roboto-Bold";
+  font-family: "Roboto-Bold", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -1206,18 +1213,22 @@
   border: none;
   background: #2f2f51;
   border-radius: 3px;
-  font-family: "Roboto-Bold";
+  font-family: "Roboto-Bold", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
   color: #ffffff;
 }
+.contacts-form__btn:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.5s;
+}
 
 .basement {
   background: #2f2f51;
 }
-
 .basement-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -1227,13 +1238,11 @@
   align-items: center;
   padding: 0 56px;
 }
-
 .basement__item {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-
 .basement__title {
   white-space: nowrap;
   font-family: "Roboto-Regular", sans-serif;
@@ -1241,15 +1250,12 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  /* identical to box height, or 125% */
   color: #ffffff;
 }
-
 .basement__politics {
   display: flex;
   gap: 20px;
 }
-
 .basement__politics-confidentiality {
   white-space: nowrap;
   font-family: "Roboto-Regular", sans-serif;
@@ -1259,7 +1265,6 @@
   line-height: 36px;
   color: #ffffff;
 }
-
 .basement__politics-agreement {
   white-space: nowrap;
   font-family: "Roboto-Regular", sans-serif;

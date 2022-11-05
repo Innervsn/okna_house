@@ -2,7 +2,7 @@
   @include container;
   margin-bottom: 87px;
 
-  @media screen and (max-width: 992px){
+  @media screen and (max-width: 992px) {
     margin-bottom: 50px;
   }
 }
@@ -20,9 +20,6 @@
 
 .about-slider {
   text-align: center;
-  // display: flex;
-  // justify-content: center;
-  // gap: 30px;
   margin-bottom: 35px;
 
   &__btn {
@@ -133,6 +130,22 @@
 
   &__title {
     margin: 0;
+    font-family: "Roboto-Bold", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #2f2f51;
+  }
+
+  &__text {
+    font-family: "Roboto-Regular", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
   }
 
   @media screen and (max-width: 992px) {
@@ -144,8 +157,6 @@
   display: block;
   margin: 0 auto;
   padding: 19px 28px;
-  // width: 312px;
-  // height: 55px;
   border: none;
   border-radius: 3px;
   font-family: "Roboto-Bold", sans-serif;
@@ -155,6 +166,12 @@
   line-height: 19px;
   background-color: $orange-color;
   color: #ffffff;
+}
+
+.about__btn:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.5s;
 }
 
 .about__btn-img {
