@@ -94,7 +94,7 @@
       box-sizing: border-box;
       width: 100%;
       margin-bottom: 15px;
-      padding-left: 16px;
+      text-indent: 16px;
       height: 40px;
       border-radius: 3px;
       border-style: none;
@@ -112,7 +112,7 @@
     }
 
     &__label {
-      display: flex;
+      display: flex; //??????
       margin-bottom: 24px;
       font-family: "Roboto-Regular", sans-serif;
       font-style: normal;
